@@ -3,7 +3,7 @@ import { Transition } from "@headlessui/react";
 import Logo from '../assets/Logo.svg';
 import OptionComponent from './OptionComponent';
 
-function Navbar() {
+const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
