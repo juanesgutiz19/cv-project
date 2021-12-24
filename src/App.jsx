@@ -5,7 +5,8 @@ function App() {
   return (
     <>
       <Navbar/>
-      <header className="bg-white shadow">
+      <div className="relative bg-gray-800">
+        <header className="bg-white shadow">
           <div className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
             <h1 className="text-3xl font-bold text-gray-900">Dashboards</h1>
           </div>
@@ -19,6 +20,7 @@ function App() {
             {/* <!-- /End replace --> */}
           </div>
         </main>
+      </div>
     </>
   );
 }

@@ -1,78 +1,40 @@
 import React, { useState } from "react";
 import { Transition } from "@headlessui/react";
 import Logo from '../assets/Logo.svg';
+import OptionComponent from './OptionComponent';
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <div>
-      <nav className="bg-gray-800">
+    <div className="sticky top-0 z-50">
+      <nav className="bg-slate-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center">
                 <img
                   className="w-40"
-                  src={Logo}
+                  src={ Logo }
                   alt="Workflow"
                 />
               </div>
               <div className="hidden md:block">
                 <div className="ml-10 flex items-baseline space-x-4">
-                  <a
-                    href="index.html"
-                    className=" hover:bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium"
-                  >
-                    About
-                  </a>
-
-                  <a
-                    href="index.html"
-                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                  >
-                    Skills
-                  </a>
-
-                  <a
-                    href="index.html"
-                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                  >
-                    Academic
-                  </a>
-
-                  <a
-                    href="index.html"
-                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                  >
-                    Experience
-                  </a>
-
-                  <a
-                    href="index.html"
-                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                  >
-                    Projects
-                  </a>
-
-                  <a
-                    href="index.html"
-                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                  >
-                    Certifications
-                  </a>
-
-                  <a
-                    href="index.html"
-                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                  >
-                    Contact
-                </a>
+                  <OptionComponent isSmallSize = { false } optionName = "About" />
+                  <OptionComponent isSmallSize = { false } optionName = "Skills" />
+                  <OptionComponent isSmallSize = { false } optionName = "Academic" />
+                  <OptionComponent isSmallSize = { false } optionName = "Experience" />
+                  <OptionComponent isSmallSize = { false } optionName = "Projects" />
+                  <OptionComponent isSmallSize = { false } optionName = "Certifications" />
+                  <OptionComponent isSmallSize = { false } optionName = "Contact" />
                 </div>
             </div>
+            
             <div className="-mr-2 flex md:hidden">
               <button
                 onClick={() => setIsOpen(!isOpen)}
                 type="button"
-                className="bg-gray-900 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+                className="bg-gray-900 inline-flex items-center justify-center p-2 rounded-md text-gray-100 hover:text-white hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
                 aria-controls="mobile-menu"
                 aria-expanded="false"
               >
@@ -127,55 +89,13 @@ function Navbar() {
           {(ref) => (
             <div className="md:hidden" id="mobile-menu">
               <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                <a
-                  href="index.html"
-                  className="hover:bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-medium"
-                >
-                  About
-                </a>
-
-                <a
-                  href="index.html"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                >
-                  Skills
-                </a>
-
-                <a
-                  href="index.html"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                >
-                  Academic
-                </a>
-
-                <a
-                  href="index.html"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                >
-                  Experience
-                </a>
-
-                <a
-                  href="index.html"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                >
-                  Projects
-                </a>
-
-                <a
-                  href="index.html"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                >
-                  Certifications
-                </a>
-
-                <a
-                  href="index.html"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                >
-                  Contact
-                </a>
-
+                  <OptionComponent isSmallSize = { true } optionName = "Skills" />
+                  <OptionComponent isSmallSize = { true } optionName = "About" />
+                  <OptionComponent isSmallSize = { true } optionName = "Academic" />
+                  <OptionComponent isSmallSize = { true } optionName = "Experience" />
+                  <OptionComponent isSmallSize = { true } optionName = "Projects" />
+                  <OptionComponent isSmallSize = { true } optionName = "Certifications" />
+                  <OptionComponent isSmallSize = { true } optionName = "Contact" />
               </div>
             </div>
           )}
