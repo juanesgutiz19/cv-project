@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Transition } from "@headlessui/react";
+import Logo from '../assets/Logo.svg';
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,10 +10,9 @@ function Navbar() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center">
-              <div className="flex-shrink-0">
                 <img
-                  className="h-8 w-8"
-                  src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
+                  className="w-40"
+                  src={Logo}
                   alt="Workflow"
                 />
               </div>
@@ -22,14 +22,28 @@ function Navbar() {
                     href="index.html"
                     className=" hover:bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
-                    Dashboards
+                    About
                   </a>
 
                   <a
                     href="index.html"
                     className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
-                    Team
+                    Skills
+                  </a>
+
+                  <a
+                    href="index.html"
+                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                  >
+                    Academic
+                  </a>
+
+                  <a
+                    href="index.html"
+                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                  >
+                    Experience
                   </a>
 
                   <a
@@ -43,17 +57,16 @@ function Navbar() {
                     href="index.html"
                     className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
-                    Calendar
+                    Certifications
                   </a>
 
                   <a
                     href="index.html"
                     className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
-                    Reports
-                  </a>
+                    Contact
+                </a>
                 </div>
-              </div>
             </div>
             <div className="-mr-2 flex md:hidden">
               <button
@@ -118,14 +131,28 @@ function Navbar() {
                   href="index.html"
                   className="hover:bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
-                  Dashboard
+                  About
                 </a>
 
                 <a
                   href="index.html"
                   className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
-                  Team
+                  Skills
+                </a>
+
+                <a
+                  href="index.html"
+                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                >
+                  Academic
+                </a>
+
+                <a
+                  href="index.html"
+                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                >
+                  Experience
                 </a>
 
                 <a
@@ -139,15 +166,16 @@ function Navbar() {
                   href="index.html"
                   className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
-                  Calendar
+                  Certifications
                 </a>
 
                 <a
                   href="index.html"
                   className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
-                  Reports
+                  Contact
                 </a>
+
               </div>
             </div>
           )}
