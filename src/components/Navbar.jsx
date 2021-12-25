@@ -13,13 +13,14 @@ const Navbar = () => {
           <div className="flex items-center justify-between h-20">
             <div className="flex items-center">
                 <img
-                  className="w-40"
+                  className="w-36"
                   src={ Logo }
                   alt="Workflow"
                 />
               </div>
               <div className="hidden md:block">
                 <div className="ml-10 flex items-baseline space-x-4">
+                  {/* Pensar si en quitar el OptionComponent de About */}
                   <OptionComponent isSmallSize = { false } optionName = "About" />
                   <OptionComponent isSmallSize = { false } optionName = "Skills" />
                   <OptionComponent isSmallSize = { false } optionName = "Academic" />
