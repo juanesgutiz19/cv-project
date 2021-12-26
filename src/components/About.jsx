@@ -4,7 +4,7 @@ import Picture from '../assets/picture-juan.jpg';
 const About = () => {
 
     return (
-        <div class="flex flex-col h-96 my-24 justify-center items-center">
+        <div className="flex flex-col h-96 my-24 justify-center items-center">
                 <div>
                     <img src={ Picture } alt="juan pic" className="w-44 h-44 rounded-full object-cover drop-shadow-2xl"/>
                 </div>
