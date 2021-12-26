@@ -1,16 +1,16 @@
 import React from 'react'
 
-const ExperienceCard = ( { title, desc, year, company, companyLink } ) => {
+const ExperienceCard = ( { title, description, year, company, companyLink } ) => {
     return (
-        <div className="relative experience-card border p-4 rounded-md shadow-xl bg-white dark:bg-gray-800 z-10 mx-4">
-          <h1 className="absolute -top-10 md:-left-10 md:-top-10 text-4xl text-gray-200 font-bold dark:text-gray-800">
-            {year}
+        <div className="relative p-4 shadow-md bg-white mx-4 my-16">
+          <h1 className="absolute -top-8 -left-8 md:-left-8 md:-top-8 text-2xl text-gray-6 font-bold">
+            { year }
           </h1>
-          <h1 className="font-semibold text-xl">{title}</h1>
-          <a href={companyLink} className="text-gray-500">
-            {company}
+          <h1 className="text-xl md:text-4xl  font-bold text-gray-900 -mb-1">{title}</h1>
+          <a href={ companyLink } className="text-gray-700 text-sm md:text-xl font-medium">
+            { company }
           </a>
-          <p className="text-gray-600 dark:text-gray-400 my-2">{desc}</p>
+          <p className="text-gray-2 text-sm md:text-base font-normal my-2 mt-5">{ description }</p>
         </div>
       );
 }
