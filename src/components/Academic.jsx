@@ -9,8 +9,7 @@ const Academic = () => {
                 <div className= "flex flex-col lg:flex-row px-10 md:px-24">
                     <AcademicCard qualification="High School Graduate" institution="Liceo Salazar y Herrera" period= { 2016 }/>
                     <AcademicCard qualification="Systems Engineering" institution="University of Antioquia"/>
-                </div>
-                
+                </div>   
             </div>
         </>
     )
