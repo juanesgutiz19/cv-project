@@ -13,7 +13,6 @@ const Skills = () => {
                     <SkillProgressBar skillName = "React.js" progressPercentage = { 55 }/>
                     <SkillProgressBar skillName = "English" progressPercentage = {70 }/>
                 </div>
-                
             </div>
         </>
     )
