@@ -6,7 +6,7 @@ const About = () => {
     return (
         <div class="flex flex-col h-96 my-24 justify-center items-center">
                 <div>
-                    <img src={ Picture } alt="juan pic" className="w-36 h-36 rounded-full object-cover drop-shadow-2xl"/>
+                    <img src={ Picture } alt="juan pic" className="w-44 h-44 rounded-full object-cover drop-shadow-2xl"/>
                 </div>
                 <div>
                     <h2 className = "text-3xl text-center font-bold text-gray-1 my-3">Juan Gutiérrez</h2>
