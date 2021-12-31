@@ -15,7 +15,7 @@ const Navbar = () => {
                 <img
                   className="w-36"
                   src={ Logo }
-                  alt="Workflow"
+                  alt="Logo Juan"
                 />
               </div>
               <div className="hidden md:block">
