@@ -20,16 +20,8 @@ const Experience = () => {
                     company="UdeA"
                     companyLink="https://www.udea.edu.co/"
           />
-          <ExperienceCard
-                    title="Programming Assistant"
-                    description="I was in charge of supporting the AVIDO server applications of the University of Antioquia."
-                    year={ 2020 }
-                    company="UdeA"
-                    companyLink="https://www.udea.edu.co/"
-          />
         </div>
-      </div>
-        
+      </div>  
       );
 }
 
