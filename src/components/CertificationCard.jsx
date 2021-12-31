@@ -12,7 +12,7 @@ const CertificationCard = ( { certificationName, platform, picture, certificatio
                             { platform }
                             </p>
                         </div>
-                        <div>
+                        <div className="text-center md:text-left">
                             <a href={ certificationLink } target="_blank" rel="noopener noreferrer" className=" hover:underline hover:decoration-gray-2"><span className="text-gray-2 text-base md:text-lg font-normal">View credential</span></a>
                         </div>                    
                  </div>
