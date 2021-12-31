@@ -3,7 +3,7 @@ import React from 'react';
 const ProjectCard = ( { picture, projectName, technologies, projectLink} ) => {
     return (
         <div className="overflow-hidden shadow-2xl rounded-sm bg-white">
-            <img className="w-full border-2 border-gray-200" src={ picture }  alt="Sunset in the mountains"/>
+            <img className="w-full border-2 border-gray-200 rounded-sm" src={ picture }  alt="Project"/>
             <div className="px-6 py-4">
                 <div className="font-bold text-2xl mb-1 text-gray-900">{ projectName }</div>
                 <p className="font-normal text-base text-gray-800">{ technologies }</p>
